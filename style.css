@@ -1,0 +1,269 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: gilroy;
+    color: white;
+}
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+
+#main{
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    flex-direction: column;
+    padding: 20px;
+    min-height: 100vh;
+}
+
+#main>h1{
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+#main>h1 span{
+    margin: 0 15px;
+    display: flex;
+    align-items: center;
+    
+}
+#main>h1 span img{
+    rotate: 90deg;
+    height: 40px;
+    transition: 0.3s ease;
+}
+
+#main>#encrydecry{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #222;
+    padding: 8px;
+    width: 100%;
+    max-width: 400px;
+    margin: 20px 0;
+    border-radius: 10px;
+}
+#main>#encrydecry h3{
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 10px 15px;
+    transition: 0.2s ease;
+}
+#encry-btn{
+    background-color: #333;
+}
+#encrydecry h3 span{
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+#encrydecry h3 span img{
+    height: 20px;
+}
+#encryption{
+    width: 45%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    flex-direction: column;
+}
+#encryption h5{
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 14px;
+    color: #6e6e6e;
+}
+#encryption textarea{
+    width: 100%;
+    height: 70px;
+    border: 1px solid #343434;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 17px;
+    outline: none;
+    background-color: #1c1c1c;
+    margin-bottom: 50px;
+}
+#encryption input{
+    width: 100%;
+    border: 1px solid #343434;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 17px;
+    outline: none;
+    background-color: #1c1c1c;
+    margin-bottom: 50px;
+}   
+#encryption button{
+    display: flex;
+    align-items: center;
+    color: #6e6e6e;
+    background-color: #1c1c1c;
+    border: none;
+    width: 100%;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 10px;
+    color: #eee;
+    font-size: 17px;
+    cursor: pointer;
+}
+button span{
+    display: flex;
+    margin-right: 10px;
+}
+button img{
+    height: 20px;
+}
+
+#decryption{
+    width: 45%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    flex-direction: column;
+    display: none;
+}
+#decryption h5{
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 14px;
+    color: #6e6e6e;
+}
+#decryption textarea{
+    width: 100%;
+    height: 70px;
+    border: 1px solid #343434;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 17px;
+    outline: none;
+    background-color: #1c1c1c;
+    margin-bottom: 50px;
+}
+#decryption input{
+    width: 100%;
+    border: 1px solid #343434;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 17px;
+    outline: none;
+    background-color: #1c1c1c;
+    margin-bottom: 50px;
+}   
+#decryption button{
+    display: flex;
+    align-items: center;
+    color: #6e6e6e;
+    background-color: #1c1c1c;
+    border: none;
+    width: 100%;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 10px;
+    color: #eee;
+    font-size: 17px;
+    cursor: pointer;
+}
+button span{
+    display: flex;
+    margin-right: 10px;
+}
+button img{
+    height: 20px;
+}
+
+#result {
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 18px;
+    background-color: #1C1C1C;
+    border: 1px solid #343434;
+    width: 45%;
+    max-width: 600px; 
+    display: none;
+    margin: 20px 0; 
+}
+
+
+
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: gilroy;
+    color: white;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+
+#main {
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+#main > h1 {
+    font-size: 32px; 
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px; 
+}
+
+#main > h1 span {
+    margin: 0 10px; 
+}
+
+#main > h1 span img {
+    height: 30px; 
+}
+
+
+
+
+@media screen and (min-width: 768px) {
+    
+
+    #main {
+        padding: 40px; 
+    }
+
+    #main > h1 {
+        font-size: 48px; 
+    }
+
+    #main>#encrydecry h3 {
+        font-size: 18px;
+        padding: 15px 20px;
+    }
+
+    #result {
+        font-size: 16px; 
+    }
+}
